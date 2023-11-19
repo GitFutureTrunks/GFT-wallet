@@ -20,7 +20,7 @@
 
 ## Search : **if QBCore.Shared.SplitStr(shopType, "_")[1] == "Dealer" then**
 
-# And put like this:
+# Add the code like this at the bottom:
 ![this](https://github.com/GitFutureTrunks/GFT-wallet/assets/145227152/c5921c94-0324-4eeb-bfc6-030e3ed605d1)
 
 
