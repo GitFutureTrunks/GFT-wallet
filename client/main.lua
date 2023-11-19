@@ -19,7 +19,7 @@ RegisterNetEvent('gft-wallet:Client:wallet', function(walletid)
     if IsPedSwimming(playerPed) then return Notify(Language.Water, "error") end
     local citizenid = QBCore.Functions.GetPlayerData().citizenid
     if Config.Utility.StashID then
-        TriggerServerEvent(Config.Utility.OpenInventory, "stash", Config.Utility.StashNames.Wallet..'_'..walletid, {maxweight = 500, slots = 4})
+        TriggerServerEvent(Config.Utility.OpenInventory, "stash", Config.Utility.StashNames.Wallet..'_'..walletid, {maxweight = 5000, slots = 4})
         TriggerEvent(Config.Utility.SetStash, Config.Utility.StashNames.Wallet..'_'..walletid)
     end
 end)
