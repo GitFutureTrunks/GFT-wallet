@@ -9,5 +9,10 @@ end
 
 QBCore.Functions.CreateUseableItem("wallet", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
+    if not item.info.walletid then
+        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
+        Player.Functions.AddItem(item.name, 1, item.slot, {walletid = math.random(1111, 9999)})
+        return
+    end
     TriggerClientEvent('gft-wallet:Client:wallet', source, item.info.walletid)
 end)
