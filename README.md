@@ -33,3 +33,8 @@
 			}
 		Player.Functions.AddItem('wallet', 1, nil, info, {["quality"] = 100})
 ```
+
+# Lastly add this to your shops resource
+```
+{ name = "wallet", price = 100, amount = 10, info = {walletid = math.random(1111,9999)} },
+```
